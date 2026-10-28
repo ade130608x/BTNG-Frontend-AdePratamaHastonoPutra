@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Auto | Showroom Mobil Eksklusif</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">Premium<span>Auto</span></h1>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Cari mobil impian Anda...">
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="hero">
+            <h2>Temukan Kendaraan Sempurna Anda</h2>
+            <p>Eksplorasi koleksi mobil premium kami dengan performa dan desain terbaik.</p>
+        </section>
+
+        <section class="catalog-section">
+            <div id="loading" class="loading-state">
+                <div class="spinner"></div>
+                <p>Mengambil data kendaraan dari server...</p>
+            </div>
+            
+            <div id="error-message" class="error-state" style="display: none;">
+                <p>Gagal memuat data. Silakan periksa koneksi atau coba lagi nanti.</p>
+                <button id="retryBtn" class="btn-primary">Coba Lagi</button>
+            </div>
+
+            <!-- Kontainer utama untuk render DOM dari JavaScript -->
+            <div id="car-container" class="grid-container"></div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Premium Auto Showroom. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
